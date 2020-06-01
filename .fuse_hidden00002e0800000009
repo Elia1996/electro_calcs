@@ -69,6 +69,4 @@
 ### other function
 	Two important function to transform l1,l2,lm to c1,c2,cm and viceversa are:
 	- ind_to_cap_pul(lm, l1, l2)
-	- cap_to_ind_pul(cm, c1,c2)
-	While a function to calculate Inductance capacitance for two wires above grounds
-	- lc_twag(**kwargs)
+	-

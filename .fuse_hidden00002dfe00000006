@@ -22,12 +22,7 @@
 												L
 							|-----------------------------------------|---------------------> z
 							z=0                                       z=L
-		In order to define all variable these functions are provided
-		- set_c_parasitic(cm, c1, c2)
-		- set_l_parasitic(lm, l1, l2)
-		- set_shield_both_end_parameters( Rsh, Lsh, LGR)
-
-		
+	
 		Starting from this basic circuit we have two possible modification,
 		1) adding a shield and the case in which the reference has a 
 		considerably resistence R0, so the main three functions are:
@@ -46,7 +41,7 @@
 		created by a signal in time, so passing in time domain we use derivative.
 		The first function to call is:
 
-		- set_Vs_time_signal(self, func_list, validity_interval_list, step=1000)
+		set_Vs_time_signal(self, func_list, validity_interval_list, step=1000)
 				this fuction receive a Vs defined in many interval and described
 				by the function list. So an example of this could be:
 						def func1(time):
@@ -59,16 +54,6 @@
 						circ.L = L
 				----->	circ.set_Vs_time_signal([func1,func2],[10e-6,20e-6])
 						circ.print_data_time_elaboration() 
-		
-		After we could use simply:
-		- print_data_time_elaboration()
-		That print all plot: Vs, d_Vs, d_Vne, d_Vfe, in  order to see the 
-		signal added to receptor conductor
 
 
-### other function
-	Two important function to transform l1,l2,lm to c1,c2,cm and viceversa are:
-	- ind_to_cap_pul(lm, l1, l2)
-	- cap_to_ind_pul(cm, c1,c2)
-	While a function to calculate Inductance capacitance for two wires above grounds
-	- lc_twag(**kwargs)
+
