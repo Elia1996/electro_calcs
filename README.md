@@ -1,5 +1,7 @@
 # electro_calcs
-
+Install module using install.sh file, this file download plotting repository 
+and set PYTHONPATH variable in ~/.bashrc in order to be able to use
+this module everywere in terminal
 ## cross_talk.py script
 		The main implementation in this script is the following class:
 
