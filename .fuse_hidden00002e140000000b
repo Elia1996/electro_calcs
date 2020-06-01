@@ -20,9 +20,8 @@
 									Refecence conductor
 							|-----------------------------------------|
 												L
-							|-----------------------------------------|------> z
+							|-----------------------------------------|---------------------> z
 							z=0                                       z=L
-
 		In order to define all variable these functions are provided
 		- set_c_parasitic(cm, c1, c2)
 		- set_l_parasitic(lm, l1, l2)
@@ -39,11 +38,9 @@
 			- Vne_Vfe_xtalk_valid_set -> Return a list of xtalk value ranging in valid frequency
 			- print_data_freq_elaboration -> UEFULLL!!! print a complete sreenshot of circuit defined
 		- cw_xtalk() -> calulate capacitance and inductance parameter for circuit with R0
-		- xtalk_shielded_both_end() -> calulate capacitance and inductance parameter 
-			for both ended shilded receptor conductor
+		- xtalk_shielded_both_end() -> calulate capacitance and inductance parameter for both ended shilded receptor conductor
 			- Vne_Vfe_xtalk_dB_shielded_both_end(f_list) -> find Vne/Vs and Vfe/Vs for shilded cable
-			- Vne_Vfe_xtalk_valid_set_shielded_both_end() -> Return a list of xtalk value 
-				ranging in valid frequency
+			- Vne_Vfe_xtalk_valid_set_shielded_both_end() -> Return a list of xtalk value ranging in valid frequency
 
 		There is also some function useful to plot the corrisponding cross talk
 		created by a signal in time, so passing in time domain we use derivative.
